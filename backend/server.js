@@ -9,7 +9,7 @@ const PORT = 5000;
 
 app.use(cors(
   {
-    origin:["https://cloudy-bites-phi.vercel.app/"],
+    origin:["https://my-project-drab-six.vercel.app/"],
     methods:["POST", "GET"],
     credentials:true
   }
