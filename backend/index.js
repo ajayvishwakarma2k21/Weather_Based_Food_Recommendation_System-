@@ -16,9 +16,10 @@ app.use(cors(
 ));
 app.use(express.json());
 
-app.get("/" (req, res) =>{
+app.get("/", (req, res) => {
   res.json("hello");
-}
+});
+
 // Weather API key (from .env file)
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
