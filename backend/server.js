@@ -6,7 +6,13 @@ require('dotenv').config();
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://cloudy-bites-phi.vercel.app/"],
+    methods:["POST", "GET"],
+    credentials:true
+  }
+));
 app.use(express.json());
 
 // Weather API key (from .env file)
