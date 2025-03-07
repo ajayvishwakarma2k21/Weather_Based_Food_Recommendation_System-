@@ -9,7 +9,7 @@ function MainApp() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/recommend', { location });
+      const response = await axios.post('https://my-project-drab-six.vercel.app/recommend', { location });
       setRecommendations(response.data.recommendations);
     } catch (error) {
       console.error(error);
